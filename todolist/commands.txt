@@ -1,0 +1,22 @@
+1. python3.11 -m venv venv
+
+2. Set-ExecutionPolicy Unrestricted -Scope Process
+    .\venv\Scripts\Activate
+    # (do your work in the virtual environment)
+    Set-ExecutionPolicy Restricted -Scope Process
+
+3. pip install django
+
+4. .\venv\Scripts\python.exe -m pip install --upgrade pip
+
+5. django-admin startproject todolist
+
+6. cd .\todolist\
+
+7. python manage.py startapp base
+
+8. python manage.py makemigrations
+
+9. python manage.py migrate
+
+10. python manage.py runserver

@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-body ul.list-group li {
+  position: relative;
+  list-style: none;
+  user-select: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  background-color: #fff !important;
+  color: #000;
+  cursor: pointer;
+  display: flex !important;
+  align-items: center !important;
+  border: solid 2px rgb(0, 0, 0);
+  border-top-width: 0;
+}
+
+.card-body ul li:last-child {
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+.card-body ul li::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-image: url(../image/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+.card-body ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+.card-body ul li.checked::before {
+  background-image: url(../image/checked.png);
+}
+
+.card-body ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.card-body ul li span:hover {
+  background-color: #cacbce;
+}
